@@ -10,7 +10,7 @@ public class Points : MonoBehaviour
 
     void Start()
     {
-        point.points = 0;
+        //point.points = 0;
     }
     void Update() 
     {
