@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ProdigyDialogue : MonoBehaviour
 {
-    public GameObject Talk;
-    public GameObject Mother;
     public GameObject DialogueOption;
     public PlayerMovement move;
     public Button theSky;

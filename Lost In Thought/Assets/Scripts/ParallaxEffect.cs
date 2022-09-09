@@ -5,18 +5,18 @@ using UnityEngine;
 public class ParallaxEffect : MonoBehaviour
 {
     Vector3 lastPos;
-    public Transform camera;
+    public Transform cam;
     public float speedCoefficient;
 
     void Start()
     {
-         lastPos= camera.position;
+         lastPos= cam.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position -= (lastPos - camera.position) * speedCoefficient;
-        lastPos = camera.position;
+        transform.position -= (lastPos - cam.position) * speedCoefficient;
+        lastPos = cam.position;
     }
 }

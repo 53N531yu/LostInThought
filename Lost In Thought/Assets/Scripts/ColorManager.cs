@@ -9,48 +9,52 @@ public class ColorManager : MonoBehaviour
     [SerializeField]
     private PointsManager point;
     
-    public float current;
+    public bool movedArea = false;
     float currentSaturation;
-    public float ColorTime = 0.125f;
-
+    public float ColorTime;
     public Volume volume;
 
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit(Collider other) 
     {
-        
+        if (other.tag == "Area1")
+        {
+            point.desiredSaturation1 = point.desiredSaturation;
+        }
+        else if (other.tag == "Area2")
+        {
+            point.desiredSaturation2 = point.desiredSaturation;
+        }
     }
 
     void OnTriggerEnter(Collider other) 
     {
         if (other.tag == "Area1")
         {
-            point.desiredSaturation = point.desiredSaturation1;
-            StartCoroutine(AreaLerp(33f, point._desiredSaturation1));
+            StartCoroutine(AreaLerp(point.desiredSaturation1));
         }
         else if (other.tag == "Area2")
         {
-            point.desiredSaturation = point.desiredSaturation2;
-            StartCoroutine(AreaLerp(33f, point._desiredSaturation2));
+            StartCoroutine(AreaLerp(point.desiredSaturation2));
         }
     }
 
-    IEnumerator AreaLerp(float SatVal, float desiredSat)
+    IEnumerator AreaLerp(float desiredSat)
     {
-        float timeElapsed = 0;
+        float time = 0;
         if(volume.profile.TryGet<ColorAdjustments>(out var ca))
         {
-            currentSaturation = ca.saturation.value;
+            currentSaturation = ca.saturation.value;    
             point.desiredSaturation = desiredSat;
-            while (timeElapsed < ColorTime)
+            while (time < ColorTime)
             {
-               ca.saturation.value = Mathf.Lerp(currentSaturation, point.desiredSaturation, timeElapsed / ColorTime);  
-               timeElapsed += Time.deltaTime;        
+               ca.saturation.value = Mathf.Lerp(currentSaturation, point.desiredSaturation, time / ColorTime);  
+               time += Time.deltaTime;     
+               yield return null;   
             }   
             ca.saturation.value = point.desiredSaturation; 
         }
 
-        yield return null;
+        
     }
 }

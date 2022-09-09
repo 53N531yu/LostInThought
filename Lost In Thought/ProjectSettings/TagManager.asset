@@ -7,6 +7,15 @@ TagManager:
   - Prodigy
   - Area1
   - Area2
+  - Perfectionist
+  - BeatLine
+  - Note1
+  - Note2
+  - Note3
+  - Note4
+  - GoodBeatLine
+  - PoorBeatLine
+  - LastNote
   layers:
   - Default
   - TransparentFX

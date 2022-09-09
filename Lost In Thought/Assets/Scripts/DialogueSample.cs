@@ -7,6 +7,7 @@ public class DialogueSample : MonoBehaviour
     public int radius;
 
     public GameObject Talk;
+    public GameObject rhythmGame;
     public GameObject Mother;
     public GameObject Player;
     public ProdigyDialogue ProdDialogue;
@@ -28,6 +29,10 @@ public class DialogueSample : MonoBehaviour
             if(gameObject.tag == "Prodigy" && point.points >= 1)
             {
                 Talk.SetActive(true);
+            }
+            if(gameObject.tag == "Perfectionist")
+            {
+                rhythmGame.SetActive(true);
             }
             else
             {
