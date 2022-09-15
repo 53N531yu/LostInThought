@@ -13,7 +13,6 @@ public class ParallaxEffect : MonoBehaviour
          lastPos= cam.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position -= (lastPos - cam.position) * speedCoefficient;

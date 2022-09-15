@@ -8,8 +8,7 @@ public class ProdigyDialogue : MonoBehaviour
     public GameObject DialogueOption;
     public PlayerMovement move;
     public Button theSky;
-    [SerializeField]
-    private PointsManager point;
+    [SerializeField] private PointsManager point;
 
     void Update()
     {

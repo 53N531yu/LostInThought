@@ -5,10 +5,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PointsManager : ScriptableObject
 {
-    [SerializeField]
-    private int _points;
-    [SerializeField]
-    private bool _important;
+    [SerializeField] private int _points;
+    [SerializeField] private bool _important;
 
     public float desiredSaturation = -100;
     public float desiredSaturation1 = -100;

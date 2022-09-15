@@ -15,11 +15,6 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    // public void Begin()
-    // {
-    //     SceneManager.LoadScene("SampleScene");
-    // }
-
     public void Quit()
     {
         Application.Quit();

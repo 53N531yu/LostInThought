@@ -8,12 +8,6 @@ public class RhythmButtons : MonoBehaviour
     public RawImage button;
     public KeyCode keyToPress;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(keyToPress))

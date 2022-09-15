@@ -6,8 +6,7 @@ using UnityEngine.Rendering.Universal;
 
 public class ColorManager : MonoBehaviour
 {
-    [SerializeField]
-    private PointsManager point;
+    [SerializeField] private PointsManager point;
     
     public bool movedArea = false;
     float currentSaturation;

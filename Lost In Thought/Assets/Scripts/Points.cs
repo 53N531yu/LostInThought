@@ -10,8 +10,7 @@ public class Points : MonoBehaviour
     public float ColorTime = 0.125f;
     float currentSaturation;
     public Volume volume;
-    [SerializeField]
-    private PointsManager point;
+    [SerializeField] private PointsManager point;
     
     void Update() 
     {

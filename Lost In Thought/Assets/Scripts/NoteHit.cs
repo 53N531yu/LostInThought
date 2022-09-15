@@ -17,23 +17,49 @@ public class NoteHit : MonoBehaviour
         {
             if (canBePressed)
             {
-                gameObject.SetActive(false);
-                Accuracy.accuracy += 100;
-                Debug.Log("Score: 100");
+                LongNoteCon(100);
+                ShortNoteCon(100);
             }
             
             if (GoodBePressed)
             {
-                gameObject.SetActive(false);
-                Accuracy.accuracy += 75;
-                Debug.Log("Score: 75");
+                LongNoteCon(75);
+                ShortNoteCon(75);
             } 
 
             if (PoorBePressed)
             {
-                gameObject.SetActive(false);
-                Accuracy.accuracy += 50;
-                Debug.Log("Score: 50");
+                LongNoteCon(50);
+                ShortNoteCon(50);
+            }
+        }
+        if (Input.GetKeyUp(keyToPress))
+        {
+            if (gameObject.tag == "LongNote" && Accuracy.LongCounter == 1)
+            {
+                gameObject.GetComponent<NoteHit>().enabled = false;
+                Accuracy.LongCounter = 0;
+            }
+
+            if (canBePressed && Accuracy.LongCounter == 2)
+            {
+                LongNoteCon(100);
+                Accuracy.LongCounter = 0;
+                DisableScript();
+            }
+            
+            if (GoodBePressed && Accuracy.LongCounter == 2)
+            {
+                LongNoteCon(75);
+                Accuracy.LongCounter = 0;
+                DisableScript();
+            } 
+
+            if (PoorBePressed && Accuracy.LongCounter == 2)
+            {
+                LongNoteCon(50);
+                Accuracy.LongCounter = 0;
+                DisableScript();
             }
         }
     }
@@ -54,9 +80,23 @@ public class NoteHit : MonoBehaviour
         {
             PoorBePressed = true;
         }
+        if((other.tag == "MissBeatLine" && gameObject.tag != "LongNote"))
+        {
+            gameObject.SetActive(false);
+            Debug.Log("Score: 0");
+        }
+        if((other.tag == "LongMissLine" && gameObject.tag == "LongNote"))
+        {
+            gameObject.SetActive(false);
+            Debug.Log("Score: 0");
+        }
+        if(other.tag == "LongNoteLine" && gameObject.tag == "LongNote")
+        {
+            Accuracy.LongCounter ++;
+        }
         if(other.tag == "PoorBeatLine" && this.gameObject.tag == "LastNote")
         {
-            Debug.Log("Accuracy: " + Accuracy.accuracy/4f + "%");
+            Debug.Log("Accuracy: " + Accuracy.accuracy/6f + "%");
         }
 
     }
@@ -77,4 +117,27 @@ public class NoteHit : MonoBehaviour
         }
     }
 
+    public void LongNoteCon(float acc)
+    {
+        if(gameObject.tag == "LongNote")
+        {
+            Accuracy.accuracy += acc;
+            Debug.Log("Score: " + acc);
+        }
+    }
+
+    public void ShortNoteCon(float accu)
+    {
+        if (gameObject.tag != "LongNote")
+        {
+            gameObject.SetActive(false);
+            Accuracy.accuracy += accu;
+            Debug.Log("Score: " + accu);
+        }
+    }
+
+    public void DisableScript()
+    {
+        gameObject.GetComponent<NoteHit>().enabled = false;
+    }
 }

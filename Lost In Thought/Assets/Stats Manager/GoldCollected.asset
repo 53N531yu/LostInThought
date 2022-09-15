@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d16bb339f7c94f5da206095a5e27057, type: 3}
   m_Name: GoldCollected
   m_EditorClassIdentifier: 
-  _points: 1
+  _points: 3
   _important: 0
-  desiredSaturation: -67
-  desiredSaturation1: 32
-  desiredSaturation2: -67
+  desiredSaturation: -1
+  desiredSaturation1: -1
+  desiredSaturation2: -100

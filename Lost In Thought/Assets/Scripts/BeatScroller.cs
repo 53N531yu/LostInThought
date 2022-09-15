@@ -8,10 +8,13 @@ public class BeatScroller : MonoBehaviour
     public float beatTempo;
     public bool hasStarted;
     public RectTransform rectTransform;
+    public AudioSource music;
     public float accuracy;
+    public int LongCounter = 0;
 
     void Start()
     {
+        music = GetComponent<AudioSource>();
         rectTransform = GetComponent<RectTransform>();
     }
 
@@ -27,6 +30,17 @@ public class BeatScroller : MonoBehaviour
         else
         {
             Scroll();
+        }
+    }
+
+    void FixedUpdate() 
+    {
+        if (hasStarted)
+        {
+            if (!music.isPlaying)
+            {
+                music.Play();           
+            }
         }
     }
 

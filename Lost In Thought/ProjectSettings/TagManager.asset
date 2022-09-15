@@ -9,13 +9,22 @@ TagManager:
   - Area2
   - Perfectionist
   - BeatLine
-  - Note1
-  - Note2
-  - Note3
-  - Note4
   - GoodBeatLine
   - PoorBeatLine
   - LastNote
+  - Piece1
+  - Piece2
+  - Piece3
+  - Piece4
+  - Slot1
+  - Slot2
+  - Slot3
+  - Slot4
+  - MissBeatLine
+  - LongNote
+  - LongNoteLine
+  - LongMissLine
+  - NavMeshOff
   layers:
   - Default
   - TransparentFX
