@@ -130,6 +130,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 667376144454036932, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8493033293047857701, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
         type: 3}
       propertyPath: volume
@@ -740,7 +775,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -769,7 +804,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 20, y: 45, z: 0}
 --- !u!114 &59726282
 MonoBehaviour:
@@ -816,9 +851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c74bd045f404249a55eadb308ea434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1017775558}
+  target: {fileID: 951337062}
   damping: 0.3
-  offset: {x: -6.3, y: 5, z: -6.3}
+  offset: {x: -9, y: 5, z: -9}
 --- !u!1 &87734085
 GameObject:
   m_ObjectHideFlags: 0
@@ -13384,6 +13419,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &951337062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 667376144454036933, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+    type: 3}
+  m_PrefabInstance: {fileID: 553633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &980179104
 GameObject:
   m_ObjectHideFlags: 0
@@ -13522,12 +13563,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 37cc866ba653b454da1722157e6eb248,
     type: 3}
   m_PrefabInstance: {fileID: 985123597}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1017775558 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8493033293047857707, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
-    type: 3}
-  m_PrefabInstance: {fileID: 553633}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1052696814
 PrefabInstance:

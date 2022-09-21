@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+[System.Serializable]
 public class Points : MonoBehaviour
 {
     public float radius;
@@ -11,23 +12,36 @@ public class Points : MonoBehaviour
     float currentSaturation;
     public Volume volume;
     [SerializeField] private PointsManager point;
+    private ItemCollected item;
     
+    void Start() 
+    {
+        item = GetComponent<ItemCollected>();
+    }
+
     void Update() 
     {
        if(((this.gameObject.transform.position - GameObject.FindGameObjectWithTag("Player").transform.position).sqrMagnitude < radius) && Input.GetKeyDown("e"))
        {
            PickUp();
        }
+       if (item.isCollected == true || item.isScene == false)
+        {
+            gameObject.SetActive(false); 
+        } 
+        else if (item.isCollected == false && item.isScene == true)
+        {
+            gameObject.SetActive(true);   
+        }
+
     }
 
     void PickUp()
     {
-        Destroy(gameObject);
-           point.points ++;
-           
-           StartCoroutine(Lerp(33f));
-           
-           Debug.Log(point.points);
+        point.points ++;
+        StartCoroutine(Lerp(33f)); 
+        Debug.Log(point.points);
+        item.isCollected = true;
     }
 
     IEnumerator Lerp(float SatVal)
