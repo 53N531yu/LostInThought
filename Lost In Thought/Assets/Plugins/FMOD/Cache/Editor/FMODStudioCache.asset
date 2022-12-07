@@ -147,7 +147,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1440
+  Length: 1250
 --- !u!114 &-740687139117504516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
   - {fileID: 1061932271749051568}
   StringsBanks:
   - {fileID: 6931244211189182315}
-  cacheTime: 638059558129443557
+  cacheTime: 638059571423701533
   cacheVersion: 131593
 --- !u!114 &1061932271749051568
 MonoBehaviour:
@@ -220,10 +220,10 @@ MonoBehaviour:
   Path: ../../../MindMapSFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638059558129435513
+  lastModified: 638059571423690057
   FileSizes:
   - Name: Desktop
-    Value: 9818048
+    Value: 9870976
   Exists: 1
 --- !u!114 &2001027572767738479
 MonoBehaviour:
@@ -381,7 +381,7 @@ MonoBehaviour:
   Path: ../../../MindMapSFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638059558129443557
+  lastModified: 638059571423701533
   FileSizes:
   - Name: Desktop
     Value: 1010
