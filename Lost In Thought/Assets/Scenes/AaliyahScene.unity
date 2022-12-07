@@ -245,7 +245,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3fe4e06aacf134fe69f231e6deb8b81f, type: 3}
 --- !u!1 &3400803
 GameObject:
@@ -259,6 +261,9 @@ GameObject:
   - component: {fileID: 3400807}
   - component: {fileID: 3400806}
   - component: {fileID: 3400805}
+  - component: {fileID: 3400809}
+  - component: {fileID: 3400810}
+  - component: {fileID: 3400811}
   m_Layer: 0
   m_Name: short tree leaves (1)
   m_TagString: Untagged
@@ -346,6 +351,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3400803}
   m_Mesh: {fileID: -2596605968142448362, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &3400809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468242, y: 0.080464624, z: 0.13927777}
+  m_Center: {x: -0.0016386533, y: 0.010004879, z: 0.047863953}
+--- !u!114 &3400810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &3400811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &7118959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,6 +531,9 @@ GameObject:
   - component: {fileID: 8730828}
   - component: {fileID: 8730827}
   - component: {fileID: 8730826}
+  - component: {fileID: 8730830}
+  - component: {fileID: 8730831}
+  - component: {fileID: 8730832}
   m_Layer: 0
   m_Name: 2 (1)
   m_TagString: Untagged
@@ -540,6 +621,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8730824}
   m_Mesh: {fileID: -7969978266939365281, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &8730830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468247, y: 0.08046467, z: 0.13927783}
+  m_Center: {x: -0.0016386247, y: 0.010004893, z: 0.04786403}
+--- !u!114 &8730831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8730832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &23896924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -730,9 +884,9 @@ GameObject:
   m_Component:
   - component: {fileID: 59726281}
   - component: {fileID: 59726280}
-  - component: {fileID: 59726279}
   - component: {fileID: 59726282}
   - component: {fileID: 59726283}
+  - component: {fileID: 59726284}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -740,14 +894,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &59726279
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59726278}
-  m_Enabled: 1
 --- !u!20 &59726280
 Camera:
   m_ObjectHideFlags: 0
@@ -854,6 +1000,19 @@ MonoBehaviour:
   target: {fileID: 951337062}
   damping: 0.3
   offset: {x: -9, y: 5, z: -9}
+--- !u!114 &59726284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59726278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1006215894}
 --- !u!1 &87734085
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +1025,9 @@ GameObject:
   - component: {fileID: 87734089}
   - component: {fileID: 87734088}
   - component: {fileID: 87734087}
+  - component: {fileID: 87734091}
+  - component: {fileID: 87734092}
+  - component: {fileID: 87734093}
   m_Layer: 0
   m_Name: 2 (3)
   m_TagString: Untagged
@@ -953,6 +1115,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87734085}
   m_Mesh: {fileID: -7969978266939365281, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &87734091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87734085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468246, y: 0.08046467, z: 0.13927785}
+  m_Center: {x: -0.001638651, y: 0.0100051295, z: 0.047864027}
+--- !u!114 &87734092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87734085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &87734093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87734085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &129830978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,6 +1335,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08949901, y: 0.0039872644, z: 0.027497264}
   m_Center: {x: 0.035125364, y: -0.061187617, z: 0.003748603}
+--- !u!1 &159698814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 495072473}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &163228272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1379,6 +1620,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 37cc866ba653b454da1722157e6eb248,
     type: 3}
   m_PrefabInstance: {fileID: 209805095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &304441625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 2070753316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &308755064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 514985511}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326564018
 PrefabInstance:
@@ -1773,6 +2026,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 37cc866ba653b454da1722157e6eb248,
     type: 3}
   m_PrefabInstance: {fileID: 357470880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &379494479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1678079316}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &414252986
 PrefabInstance:
@@ -2234,6 +2493,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 495072473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &495072477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159698814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &495072478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159698814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421458, y: 0.087697424, z: 0.046926722}
+  m_Center: {x: -0.0012741116, y: 0.0021320775, z: 0.021522561}
 --- !u!1001 &510122313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,6 +2721,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 514985511}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &514985515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308755064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &514985516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308755064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421459, y: 0.087697424, z: 0.046926696}
+  m_Center: {x: -0.0012741687, y: 0.0021320155, z: 0.021522405}
 --- !u!65 &521462818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3026,6 +3371,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &703299130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1213143994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &711996112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13425,6 +13776,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 553633}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &961438429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1874560326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &980179104
 GameObject:
   m_ObjectHideFlags: 0
@@ -13564,6 +13921,102 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 985123597}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1006215894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 667376144454036930, guid: 3fe4e06aacf134fe69f231e6deb8b81f,
+    type: 3}
+  m_PrefabInstance: {fileID: 553633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006215895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006215894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -487164365
+      Data2: 1186397299
+      Data3: -522825793
+      Data4: -1219664442
+    Path: event:/Background/Breeze
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1006215904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006215894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -561479112
+      Data2: 1106119511
+      Data3: 675849602
+      Data4: 577929018
+    Path: event:/Background/Crickets
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1006215905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006215894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1431679091
+      Data2: 1103106399
+      Data3: 1400491176
+      Data4: -2117015553
+    Path: event:/Background/Theme
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1052696814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18767,6 +19220,8 @@ GameObject:
   - component: {fileID: 1131155060}
   - component: {fileID: 1131155059}
   - component: {fileID: 1131155058}
+  - component: {fileID: 1131155062}
+  - component: {fileID: 1131155063}
   m_Layer: 0
   m_Name: 2 (2)
   m_TagString: Untagged
@@ -18854,6 +19309,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131155056}
   m_Mesh: {fileID: -7969978266939365281, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1131155062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131155056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468246, y: 0.08046466, z: 0.13927783}
+  m_Center: {x: -0.0016386503, y: 0.010004947, z: 0.047864027}
+--- !u!114 &1131155063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131155056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1143809386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18944,6 +19442,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1143809386}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1148515652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 619830417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1148515655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148515652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1148515656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148515652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421459, y: 0.087697424, z: 0.04692672}
+  m_Center: {x: -0.0012742011, y: 0.0021319583, z: 0.02152229}
 --- !u!1001 &1174599586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19059,6 +19606,9 @@ GameObject:
   - component: {fileID: 1183067515}
   - component: {fileID: 1183067514}
   - component: {fileID: 1183067513}
+  - component: {fileID: 1183067517}
+  - component: {fileID: 1183067518}
+  - component: {fileID: 1183067519}
   m_Layer: 0
   m_Name: 4 (2)
   m_TagString: Untagged
@@ -19146,6 +19696,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183067511}
   m_Mesh: {fileID: -2628482395200241503, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1183067517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183067511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.074682444, y: 0.080464624, z: 0.13927777}
+  m_Center: {x: -0.0016387149, y: 0.010004996, z: 0.047864042}
+--- !u!114 &1183067518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183067511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1183067519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183067511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1185025338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19416,6 +20039,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1213143994}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1213143998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703299130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1213144001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703299130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421458, y: 0.087697424, z: 0.046926696}
+  m_Center: {x: -0.0012740495, y: 0.0021320789, z: 0.021522434}
 --- !u!1001 &1243649602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20050,6 +20716,55 @@ CapsuleCollider:
   m_Height: 0.15
   m_Direction: 2
   m_Center: {x: -0.001638655, y: 0.003, z: 0.047864012}
+--- !u!1 &1406123589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 172884120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1406123593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406123589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0842146, y: 0.08769744, z: 0.0469267}
+  m_Center: {x: -0.001274169, y: 0.0021321983, z: 0.021522436}
+--- !u!114 &1406123594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406123589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!65 &1462475357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20075,6 +20790,9 @@ GameObject:
   - component: {fileID: 1470360680}
   - component: {fileID: 1470360679}
   - component: {fileID: 1470360678}
+  - component: {fileID: 1470360682}
+  - component: {fileID: 1470360683}
+  - component: {fileID: 1470360684}
   m_Layer: 0
   m_Name: 4 (1)
   m_TagString: Untagged
@@ -20162,6 +20880,128 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470360676}
   m_Mesh: {fileID: -2628482395200241503, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1470360682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470360676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468242, y: 0.080464646, z: 0.13927782}
+  m_Center: {x: -0.0016386262, y: 0.010004883, z: 0.047863998}
+--- !u!114 &1470360683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470360676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1470360684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470360676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
+--- !u!1 &1480042762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174599586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1480042765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480042762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1480042766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480042762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421458, y: 0.087697424, z: 0.0469267}
+  m_Center: {x: -0.0012740495, y: 0.0021320789, z: 0.021522466}
 --- !u!136 &1487902180
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20292,6 +21132,9 @@ GameObject:
   - component: {fileID: 1558444678}
   - component: {fileID: 1558444677}
   - component: {fileID: 1558444676}
+  - component: {fileID: 1558444680}
+  - component: {fileID: 1558444681}
+  - component: {fileID: 1558444682}
   m_Layer: 0
   m_Name: l2 (1)
   m_TagString: Untagged
@@ -20379,6 +21222,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558444674}
   m_Mesh: {fileID: -4676429599641784412, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1558444680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558444674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.074615695, y: 0.096798465, z: 0.1443983}
+  m_Center: {x: -0.0031289735, y: -0.00009907567, z: 0.050599575}
+--- !u!114 &1558444681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558444674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1558444682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558444674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1563884481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20671,6 +21587,9 @@ GameObject:
   - component: {fileID: 1601511046}
   - component: {fileID: 1601511045}
   - component: {fileID: 1601511044}
+  - component: {fileID: 1601511048}
+  - component: {fileID: 1601511049}
+  - component: {fileID: 1601511050}
   m_Layer: 0
   m_Name: 3 (1)
   m_TagString: Untagged
@@ -20758,6 +21677,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601511042}
   m_Mesh: {fileID: -5582133695706433325, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1601511048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601511042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468243, y: 0.08046463, z: 0.13927779}
+  m_Center: {x: -0.0016386558, y: 0.010004872, z: 0.04786407}
+--- !u!114 &1601511049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601511042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1601511050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601511042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1628880430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25859,6 +26851,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1678079316}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1678079320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379494479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1678079321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379494479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421459, y: 0.087697424, z: 0.046926696}
+  m_Center: {x: -0.0012741687, y: 0.0021321683, z: 0.021522494}
 --- !u!1001 &1685538320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26105,6 +27140,9 @@ GameObject:
   - component: {fileID: 1718049705}
   - component: {fileID: 1718049704}
   - component: {fileID: 1718049703}
+  - component: {fileID: 1718049707}
+  - component: {fileID: 1718049708}
+  - component: {fileID: 1718049709}
   m_Layer: 0
   m_Name: l4 (1)
   m_TagString: Untagged
@@ -26192,6 +27230,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718049701}
   m_Mesh: {fileID: 9198879776737795376, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1718049707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718049701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461574, y: 0.09679852, z: 0.14439836}
+  m_Center: {x: -0.0031289866, y: -0.00009930172, z: 0.050599556}
+--- !u!114 &1718049708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718049701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1718049709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718049701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!136 &1743783383
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26296,6 +27407,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1759378994}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1764250961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1963253255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1775579192
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26310,6 +27427,55 @@ CapsuleCollider:
   m_Height: 0.15
   m_Direction: 2
   m_Center: {x: -0.0016386558, y: 0, z: 0.047864016}
+--- !u!1 &1780181124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 53503419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780181127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780181124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1780181128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780181124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421457, y: 0.08769741, z: 0.0469267}
+  m_Center: {x: -0.0012741684, y: 0.0021320784, z: 0.021522436}
 --- !u!1001 &1802140870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26650,6 +27816,9 @@ GameObject:
   - component: {fileID: 1850057641}
   - component: {fileID: 1850057640}
   - component: {fileID: 1850057639}
+  - component: {fileID: 1850057643}
+  - component: {fileID: 1850057644}
+  - component: {fileID: 1850057645}
   m_Layer: 0
   m_Name: l3 (1)
   m_TagString: Untagged
@@ -26737,6 +27906,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850057637}
   m_Mesh: {fileID: -7138129037225082546, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &1850057643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850057637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0746157, y: 0.096798435, z: 0.14439826}
+  m_Center: {x: -0.00312901, y: -0.000099314544, z: 0.050599556}
+--- !u!114 &1850057644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850057637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1850057645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850057637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1874560326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26827,6 +28069,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1874560326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1874560330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961438429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1874560331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961438429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.084214605, y: 0.087697424, z: 0.046926707}
+  m_Center: {x: -0.0012736921, y: 0.0021320789, z: 0.021522379}
 --- !u!1001 &1880238987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26917,6 +28202,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1880238987}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1901732773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 881675316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1901732776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901732773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1901732777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901732773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421459, y: 0.087697424, z: 0.046926696}
+  m_Center: {x: -0.0012741687, y: 0.0021321683, z: 0.021522494}
 --- !u!1 &1903512421
 GameObject:
   m_ObjectHideFlags: 0
@@ -31825,6 +33159,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926016985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1932065934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 53780fc40606547448225fc7a2227f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 414252986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1932065937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932065934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1932065938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932065934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0842146, y: 0.08769744, z: 0.0469267}
+  m_Center: {x: -0.0012742882, y: 0.002132079, z: 0.021522466}
 --- !u!1001 &1933637845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37007,6 +38390,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1963253255}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963253259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764250961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1963253260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764250961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421457, y: 0.08769741, z: 0.0469267}
+  m_Center: {x: -0.0012741684, y: 0.0021320188, z: 0.021522436}
 --- !u!1001 &2011287134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37382,6 +38808,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2070753316}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2070753320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304441625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 543683008
+      Data2: 1279623710
+      Data3: 1554553259
+      Data4: -1570694023
+    Path: event:/Environment/Bush
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &2070753321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304441625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08421458, y: 0.087697424, z: 0.046926696}
+  m_Center: {x: -0.0012741687, y: 0.0021320789, z: 0.021522494}
 --- !u!1001 &2081906773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42533,6 +44002,9 @@ GameObject:
   - component: {fileID: 6357743653217840348}
   - component: {fileID: 3153401230859354882}
   - component: {fileID: 1487902180}
+  - component: {fileID: 6357743653217840350}
+  - component: {fileID: 6357743653217840351}
+  - component: {fileID: 6357743653217840352}
   m_Layer: 0
   m_Name: medium tree.001
   m_TagString: Untagged
@@ -43005,6 +44477,9 @@ GameObject:
   - component: {fileID: 5313607148936485594}
   - component: {fileID: 6164944049003822775}
   - component: {fileID: 8100667053852158155}
+  - component: {fileID: 8100667053852158157}
+  - component: {fileID: 8100667053852158158}
+  - component: {fileID: 8100667053852158159}
   m_Layer: 0
   m_Name: medium tree.002
   m_TagString: Untagged
@@ -43032,6 +44507,9 @@ GameObject:
   - component: {fileID: 4695734397396659037}
   - component: {fileID: 5325404871710955165}
   - component: {fileID: 1775579192}
+  - component: {fileID: 5325404871710955167}
+  - component: {fileID: 5325404871710955168}
+  - component: {fileID: 5325404871710955169}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -43267,6 +44745,9 @@ GameObject:
   - component: {fileID: 6346842309970204332}
   - component: {fileID: 4491638321618988160}
   - component: {fileID: 1246020179}
+  - component: {fileID: 8856948544317062455}
+  - component: {fileID: 8856948544317062456}
+  - component: {fileID: 8856948544317062457}
   m_Layer: 0
   m_Name: short tree leaves
   m_TagString: Untagged
@@ -43467,6 +44948,9 @@ GameObject:
   - component: {fileID: 7378516156320967618}
   - component: {fileID: 1142397201136498012}
   - component: {fileID: 2105636311}
+  - component: {fileID: 7378516156320967620}
+  - component: {fileID: 7378516156320967621}
+  - component: {fileID: 7378516156320967622}
   m_Layer: 0
   m_Name: l2
   m_TagString: Untagged
@@ -43867,6 +45351,79 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5325404871710955167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238249415690065138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468243, y: 0.08046461, z: 0.13927777}
+  m_Center: {x: -0.0016386557, y: 0.010004818, z: 0.047863953}
+--- !u!114 &5325404871710955168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238249415690065138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5325404871710955169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238249415690065138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!33 &5334037118404852863
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -43985,6 +45542,9 @@ GameObject:
   - component: {fileID: 5828450642868251291}
   - component: {fileID: 1880040865317008727}
   - component: {fileID: 929725041}
+  - component: {fileID: 5828450642868251293}
+  - component: {fileID: 5828450642868251294}
+  - component: {fileID: 5828450642868251295}
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
@@ -44023,6 +45583,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5666554689530160811}
   m_Mesh: {fileID: -5582133695706433325, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &5828450642868251293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5666554689530160811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.074682444, y: 0.08046463, z: 0.13927779}
+  m_Center: {x: -0.0016386551, y: 0.010004883, z: 0.047864016}
+--- !u!114 &5828450642868251294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5666554689530160811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5828450642868251295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5666554689530160811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!23 &5853094092351323023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44194,6 +45827,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894070789209672034}
   m_Mesh: {fileID: -7895196807426720876, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &6357743653217840350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894070789209672034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461569, y: 0.096798435, z: 0.14439829}
+  m_Center: {x: -0.003129032, y: -0.00009907594, z: 0.050599538}
+--- !u!114 &6357743653217840351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894070789209672034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &6357743653217840352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894070789209672034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &6435393348950189425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44248,6 +45954,8 @@ GameObject:
   - component: {fileID: 2570407348071131932}
   - component: {fileID: 5039687269949515610}
   - component: {fileID: 1402104588}
+  - component: {fileID: 6471496337082712507}
+  - component: {fileID: 6471496337082712508}
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
@@ -44255,6 +45963,49 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6471496337082712507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471496337082712505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07468244, y: 0.080464624, z: 0.13927777}
+  m_Center: {x: -0.0016385952, y: 0.010004763, z: 0.047864012}
+--- !u!114 &6471496337082712508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471496337082712505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &6535744828311548877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44465,6 +46216,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3932626726479938215}
   m_Mesh: {fileID: -4676429599641784412, guid: 2ec8d58cda53c4396aa8ed6a6ff0f8de, type: 3}
+--- !u!65 &7378516156320967620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3932626726479938215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461568, y: 0.09679845, z: 0.14439829}
+  m_Center: {x: -0.0031290315, y: -0.00009919818, z: 0.05059957}
+--- !u!114 &7378516156320967621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3932626726479938215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &7378516156320967622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3932626726479938215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &7560972190171319296
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44669,6 +46493,79 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8100667053852158157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128781124331216081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05349258, y: 0.09679845, z: 0.07004845}
+  m_Center: {x: 0.0012015821, y: -0.00009919519, z: 0.08777447}
+--- !u!114 &8100667053852158158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128781124331216081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8100667053852158159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128781124331216081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!23 &8104455879985161907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44723,6 +46620,9 @@ GameObject:
   - component: {fileID: 4919221406867728786}
   - component: {fileID: 3278601292583650624}
   - component: {fileID: 1743783383}
+  - component: {fileID: 8170864264510872897}
+  - component: {fileID: 8170864264510872898}
+  - component: {fileID: 8170864264510872899}
   m_Layer: 0
   m_Name: l5
   m_TagString: Untagged
@@ -44730,6 +46630,79 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8170864264510872897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170864264510872895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461568, y: 0.096798435, z: 0.14439829}
+  m_Center: {x: -0.003128957, y: -0.00009931436, z: 0.050599627}
+--- !u!114 &8170864264510872898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170864264510872895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8170864264510872899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170864264510872895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &8391096857549990468
 GameObject:
   m_ObjectHideFlags: 0
@@ -44742,6 +46715,9 @@ GameObject:
   - component: {fileID: 1596798770214270902}
   - component: {fileID: 4066914836571905156}
   - component: {fileID: 664012511}
+  - component: {fileID: 9050603822977027067}
+  - component: {fileID: 9050603822977027068}
+  - component: {fileID: 9050603822977027069}
   m_Layer: 0
   m_Name: l3
   m_TagString: Untagged
@@ -44802,6 +46778,7 @@ GameObject:
   - component: {fileID: 5073233306761880090}
   - component: {fileID: 2877015513846240702}
   - component: {fileID: 1489719818}
+  - component: {fileID: 9163683535881131574}
   m_Layer: 0
   m_Name: pencil crystal
   m_TagString: Untagged
@@ -44878,6 +46855,79 @@ Transform:
   m_Father: {fileID: 543450652511342980}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8856948544317062455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206431800329628743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.074682444, y: 0.080464624, z: 0.13927777}
+  m_Center: {x: -0.0016387724, y: 0.010004819, z: 0.047864012}
+--- !u!114 &8856948544317062456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206431800329628743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8856948544317062457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206431800329628743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &8944008015705123516
 GameObject:
   m_ObjectHideFlags: 0
@@ -44890,6 +46940,8 @@ GameObject:
   - component: {fileID: 2149908536815950781}
   - component: {fileID: 5853094092351323023}
   - component: {fileID: 355472723}
+  - component: {fileID: 8944008015705123518}
+  - component: {fileID: 8944008015705123519}
   m_Layer: 0
   m_Name: medium tree
   m_TagString: Untagged
@@ -44897,6 +46949,49 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8944008015705123518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8944008015705123516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461568, y: 0.08296308, z: 0.1067567}
+  m_Center: {x: -0.0031289365, y: -0.002941927, z: 0.031778745}
+--- !u!114 &8944008015705123519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8944008015705123516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!23 &8949462567462578070
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44954,6 +47049,79 @@ Transform:
   m_Father: {fileID: 543450652511342980}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9050603822977027067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391096857549990468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461568, y: 0.096798435, z: 0.14439827}
+  m_Center: {x: -0.003128972, y: -0.00009907594, z: 0.050599534}
+--- !u!114 &9050603822977027068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391096857549990468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &9050603822977027069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391096857549990468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &9146777073886310366
 GameObject:
   m_ObjectHideFlags: 0
@@ -44991,6 +47159,36 @@ Transform:
   m_Father: {fileID: 543450652511342980}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9163683535881131574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8713191376731646669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1690269659
+      Data2: 1173215728
+      Data3: 1151405450
+      Data4: -969622262
+    Path: event:/Environment/Crystal_Chime
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &9218715759885959374
 GameObject:
   m_ObjectHideFlags: 0
@@ -45003,6 +47201,9 @@ GameObject:
   - component: {fileID: 3676759099524907342}
   - component: {fileID: 7731837415470600910}
   - component: {fileID: 2105108150}
+  - component: {fileID: 9218715759885959376}
+  - component: {fileID: 9218715759885959377}
+  - component: {fileID: 9218715759885959378}
   m_Layer: 0
   m_Name: l4
   m_TagString: Untagged
@@ -45010,3 +47211,76 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &9218715759885959376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218715759885959374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07461568, y: 0.09679845, z: 0.14439829}
+  m_Center: {x: -0.0031289123, y: -0.00009907897, z: 0.05059957}
+--- !u!114 &9218715759885959377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218715759885959374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1696086328
+      Data2: 1085819525
+      Data3: -1644150089
+      Data4: 1125967539
+    Path: event:/Environment/Tree_Chime
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &9218715759885959378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218715759885959374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
